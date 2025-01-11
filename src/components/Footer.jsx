@@ -29,41 +29,45 @@ const Footer = () => {
   ];
   return (
     <div>
-      <div className="flex space-x-20 bg-[#085293] text-white py-20 px-20">
-        <div className="w-[22.4rem]">
+      <div className="flex flex-col lg:flex-row lg:space-x-20 bg-[#085293] text-white py-8 px-4 lg:py-20 lg:px-20">
+        <div className="lg:w-[22.4rem]">
           <img className="h-12" src={trimblelog} alt="" />
-          <p className="ml-2 mt-4">
+          <p className="lg:ml-2 text-sm lg:text-base mt-4">
             Positioning-centric information is changing the way people,
             businesses and governments work throughout the world. By applying
             Trimble's advanced positioning solutions, productivity increases and
             safety improvements are being realized.
           </p>
-          <button className="ml-2 underline mt-4 cursor-pointer">More About Trimble</button>
+          <button className="hidden lg:flex ml-2 underline mt-4 cursor-pointer">More About Trimble</button>
         </div>
-        <div className="list-none text-sm pl-24">
+        <div className="flex mt-6 lg:mt-0">
+        <div className="list-none text-sm pr-10 lg:pl-24">
           <p className="font-bold pb-2">About Us</p>
           <li className="underline py-2 cursor-pointer">Careers</li>
           <li className="underline py-2 cursor-pointer">SketchUp Blog</li>
           <li className="underline py-2 cursor-pointer">Trimble Buildings</li>
         </div>
-        <div className="list-none text-sm pl-24">
+        <div className="list-none text-sm pl-4 lg:pl-24">
           <p className="font-bold pb-2">Help</p>
           <li className="underline py-2 cursor-pointer">Help Center</li>
           <li className="underline py-2 cursor-pointer">SketchUp Forums</li>
           <li className="underline py-2 cursor-pointer">SketchUp Training</li>
           <li className="underline py-2 cursor-pointer">Contact Us</li>
         </div>
+        </div>
       </div>
-      <div className="flex items-center px-20 py-5 bg-[#f1f1f6]">
+      <div className="flex flex-wrap lg:flex-row items-center px-4 lg:px-20 py-7 bg-[#f1f1f6]">
         <img className="h-6" src={trimble} alt="" />
-        <div className="text-xs space-x-6 mx-36 text-[#0063a3]">
-          <a className="text-[#404243]" href="">© 2025 Trimble Inc</a>
+        <div className=" flex text-xs space-x-6 lg:ml-36 mt-2 lg:mt-0 text-[#0063a3]">
+          <a className="text-[#404243] " href="">© 2025 Trimble Inc</a>
           <a href="">Privacy</a>
           <a href="">Terms of Use</a>
+        </div>
+        <div className="flex text-xs space-x-6 lg:ml-6 mt-2 lg:mt-0 text-[#0063a3]">
           <a href="">Do Not Sell My Personal Information</a>
           <a href="">Build</a>
         </div>
-        <div className="relative inline-block">
+        <div className="relative inline-block mt-4 lg:mt-0 ml-4 lg:ml-40">
           <button
             onClick={toggleMenu}
             className="flex items-center justify-between w-36 px-3 py-2 bg-white hover:border-[1px] border-gray-300 focus:border-[1px] focus:border-black"
