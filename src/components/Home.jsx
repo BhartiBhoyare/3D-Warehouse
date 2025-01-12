@@ -12,10 +12,10 @@ const Home = () => {
           <p className="lg:font-semibold font-bold text-white text-2xl lg:text-[2rem] mb-10 font-sans">
             What can we help you find?
           </p>
-          <div className="bg-white font-bold flex items-center w-[21rem] lg:w-[51rem] rounded-sm lg:rounded-md">
+          <div className="bg-white font-bold lg:font-medium flex items-center w-[21rem] lg:w-[51rem] rounded-sm lg:rounded-md">
             <input
               type="search"
-              className="form-control mr-lg-2 outline-none w-[46rem] px-2 rounded-l-lg lg:rounded-l-md"
+              className="form-control mr-lg-2 outline-none w-[46rem] px-2 lg:px-5 rounded-l-lg lg:rounded-l-md"
               placeholder="Search for content..."
               aria-label="Search"
             />

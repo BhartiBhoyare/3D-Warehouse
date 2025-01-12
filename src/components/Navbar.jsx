@@ -12,8 +12,8 @@ const Navbar = () => {
         <button className="hidden lg:flex font-bold bg-[#0063a3] text-white py-[0.1rem] px-4 rounded-sm ml-6 hover:bg-[#217cbb]">
           Get SketchUp
         </button>
-        <img className="hidden lg:flex size-4 lg:ml-[48rem]" src={upload} alt="" />
-        <img className="size-5 ml-[17.5rem] lg:ml-6" src={user} alt="" />
+        <img className="hidden lg:flex size-4 lg:ml-[48rem] cursor-pointer" src={upload} alt="" />
+        <img className="size-5 ml-[17.5rem] lg:ml-6 cursor-pointer" src={user} alt="" />
       </nav>
     </>
   );
